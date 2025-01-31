@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+</head>
+
+
+<style>
+
+/*  Style of the page
+    Style of the page
+    tyle of the page*/
+
+            body 
+                {
+                    height: 100%;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center; /* Centre horizontalement */
+                    align-items: center; /* Centre verticalement */
+                }
+                
+            #allmypage 
+                {
+                    height:100%;
+                    width:500px;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    display:grid;
+                    place-items:center;
+                    border-style: double;
+                    border-width: 10px;
+                    border-spacing: 100px;
+                    background-color:gray;
+                    position:center;
+    }
+
+ /* Style of the navbar
+    Style of the navbar 
+    Style of the navbar */
+
+            #navbarglobal 
+                {
+                    position: relative;
+                    width: ;
+                    height: 50px;
+                    display:flex;
+                    list-style: none;
+                    padding: 0;
+                    background-color: white;
+                    border-style:solid;
+                    border-color:black;
+                    font-weight: bolder;
+                    border-radius: 20px;
+                    place-items: center
+                }
+            
+            #navbar
+                {
+                    text-decoration: none;
+                    color :black;
+                    font-size : 20px;
+                    border-style: none;
+                    margin-right: 20px;
+                    margin-left:20px;
+                    height: 200px;
+                }
+
+/*  Adding some crativity to my titles
+    About Me
+    My work
+    Resume
+    Contact*/
+            h2
+            {
+                    font-size:30px;
+                    font-family:'Times New Roman';
+                    text-align: center;
+                    border-style: dotted;
+                    border-color:gray;
+                    border-radius:10px;
+                    background-color: white;
+                
+            }
+
+/*  Style of sections
+    Style of sections
+    Style of sections*/
+
+            section
+            {
+                text-align: center;
+                border-style:solid;
+                border-top: 10px;
+                border-color:white;
+                background-color: gray;
+
+            }
+            #submit
+            {
+                background-color: green;
+                border-radius:10px;
+                border-style: none;
+                font-size: 15px;
+                font-weight: bolder;
+                color:white;
+
+            }
+</style>
+
+
+<body>
+    <div id="allmypage">
+
+    <!-- Navigation -->
+
+
+    <nav>
+        <ul id="navbarglobal">
+            <li ><a id="navbar" href="#home">Home</a></li> 
+            <li ><a id="navbar" href="#about">About</a></li> 
+            <li ><a id="navbar" href="#work">Work</a></li> 
+            <li ><a id="navbar" href="#resume">Resume</a></li> 
+            <li ><a id="navbar" href="#contact">Contact</a></li> 
+        </ul>
+    </nav>
+    
+    <!-- Section About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <form>
+            <label for="about-text">Introduce yourself :</label><br>
+            <textarea id="about-text" name="about-text" rows="4" required></textarea><br>
+            <input id ="submit" type="submit" value="SUBMIT">
+        </form>
+    </section> <br><br><br>
+    
+    <!-- Section Work -->
+    <section id="work">
+        <h2>My Work</h2>
+        <form>
+            <label for="work-details">Décrivez vos projets :</label><br>
+            <textarea id="work-details" name="work-details" rows="4" required></textarea><br>
+            <input id="submit" type="submit" value="SUBMIT">
+        </form>
+        <video controls width="400">
+            <source src="video.mp4" type="video/mp4">
+            The browser doesn't support this video!
+        </video>
+    </section><br><br><br>
+    
+    <!-- Section Resume -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <form>
+            <label for="resume-details">Add your experiences :</label><br>
+            <textarea id="resume-details" name="resume-details" rows="4" required></textarea><br>
+            <input id="submit" type="submit" value="SUBMIT">
+        </form>
+    </section><br><br><br>
+    
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            
+            <input id="submit" type="submit" value="SEND">
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; My html portfolio </p>
+        <p>I have added some css to style my page </p>
+        <p>I think that is a good idea and not a Off-topic</p>
+    </footer>
+    </div>
+</body>
+</html>
